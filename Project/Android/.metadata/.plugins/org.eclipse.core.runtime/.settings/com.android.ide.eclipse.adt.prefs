@@ -1,0 +1,5 @@
+com.android.ide.eclipse.adt.fixLegacyEditors=1
+com.android.ide.eclipse.adt.sdk=/Volumes/MacData/DevTools/Android/lunaSdk
+com.android.ide.eclipse.adt.xmlEditor=true
+design.structure.flyout.width=286
+eclipse.preferences.version=1

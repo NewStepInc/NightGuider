@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    xmlns:app="http://schemas.android.com/apk/res/com.werner.nightguider">
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip" >
+
+        <com.werner.nightguider.ui.custom.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:scaleType="centerCrop"
+            app:border_color="@android:color/white"
+            app:border_width="2dip"
+            app:corner_radius="25dip" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imageView_arrow"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:singleLine="true"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#004476"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/host"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/text_starttime"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#718594"
+        android:textSize="14sp" />
+
+    <!-- Rightend Duration -->
+
+
+    <!-- Rightend Arrow -->
+
+    <ImageView
+        android:id="@+id/imageView_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/text_starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:gravity="right"
+        android:text="5:45"
+        android:textColor="#718594"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

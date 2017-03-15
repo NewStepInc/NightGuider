@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  NightGuider
+//
+//  Created by Werner Kohn on 20.10.15.
+//  Copyright © 2015 Werner Kohn. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <Accounts/Accounts.h>
+#import <Social/Social.h>
+#endif
+
+#define IOS_NEWER_OR_EQUAL_TO_8 ( [ [ [ UIDevice currentDevice ] systemVersion ] floatValue ] >= 8.0 )
+#define FONT_HELVETICA(s) [UIFont fontWithName:@"HelveticaNeue-Light" size:s]
+#define FONT_HELVETICA_NORMAL(s) [UIFont fontWithName:@"HelveticaNeue-Regular" size:s]
+
+
+#define day_1 (-86400-10800)
+#define day_2 (-10800-86400*2)
+#define day_3 (-10800-86400*3)
+#define day_4 (-10800-86400*4)
+#define day_5 (-10800-86400*5)
+#define day_6 (-10800-86400*6)
+#define day_7 (-10800-86400*7)
+#define day_14 (-10800-86400*14)
+#define day_0 (-18000)
+
+#define DLog(...) NSLog(@"%s(%p) %@", __PRETTY_FUNCTION__, self, [NSString stringWithFormat:__VA_ARGS__])

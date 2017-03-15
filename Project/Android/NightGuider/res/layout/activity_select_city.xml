@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/iv_clupp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/lbl_city_title_top"
+        android:layout_weight="1"
+        android:shadowColor="#606060"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="@string/title_activity_select_city"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/tv_selectcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_clupp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/lbl_please_top"
+        android:layout_weight="1"
+        android:shadowColor="#606060"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="@string/selectyourcity"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/lbl_please_textsize"
+        tools:context=".SelectCityActivity" />
+
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_selectcity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/lbl_loading_top"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:text="@string/loading"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/lbl_loading_textsize"
+        tools:context=".SelectCityActivity" />
+
+    <ListView
+        android:id="@+id/listView_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_selectcity"
+        android:layout_marginTop="@dimen/list_top"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:visibility="invisible" >
+
+    </ListView>
+
+</RelativeLayout>

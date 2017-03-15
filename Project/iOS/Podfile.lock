@@ -1,0 +1,177 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Bolts (1.5.0):
+    - Bolts/AppLinks (= 1.5.0)
+    - Bolts/Tasks (= 1.5.0)
+  - Bolts/AppLinks (1.5.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.5.0)
+  - Branch (0.11.11)
+  - Canvas (0.1.2)
+  - CardIO (5.2.2)
+  - DBPrivacyHelper (0.6.3)
+  - FBSDKCoreKit (4.8.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 4.8.0)
+    - FBSDKCoreKit/no-arc (= 4.8.0)
+  - FBSDKCoreKit/arc (4.8.0):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (4.8.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
+  - FBSDKLoginKit (4.8.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.8.0):
+    - FBSDKCoreKit
+  - JLPermissions/Calendar (2.2.6):
+    - DBPrivacyHelper (= 0.6.3)
+    - JLPermissions/Core
+  - JLPermissions/Core (2.2.6):
+    - DBPrivacyHelper (= 0.6.3)
+  - JLPermissions/Location (2.2.6):
+    - DBPrivacyHelper (= 0.6.3)
+    - JLPermissions/Core
+  - JLPermissions/Notification (2.2.6):
+    - DBPrivacyHelper (= 0.6.3)
+    - JLPermissions/Core
+  - JLPermissions/Photos (2.2.6):
+    - DBPrivacyHelper (= 0.6.3)
+    - JLPermissions/Core
+  - KNSemiModalViewController_hons82 (0.4.4)
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - libextobjc/NSInvocation+EXT (= 0.4.1)
+    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - MBProgressHUD (0.9.1)
+  - Onboard (2.1.7)
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
+  - ParseCrashReporting (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
+    - Parse (~> 1.9.1)
+  - ParseFacebookUtilsV4 (1.9.1):
+    - Bolts/Tasks (>= 1.5)
+    - FBSDKCoreKit (~> 4.8)
+    - FBSDKLoginKit (~> 4.8)
+    - Parse (~> 1.9)
+  - ParseUI (1.1.7):
+    - Bolts/Tasks (~> 1.3)
+    - Parse (~> 1.9)
+  - PAYFormBuilder (2.1.1):
+    - BlocksKit (~> 2)
+    - libextobjc (~> 0.4)
+    - SZTextView (~> 1.1)
+  - PayMillSDK (2.2.0)
+  - PayPal-iOS-SDK (2.12.7):
+    - PayPal-iOS-SDK/CardIO (= 2.12.7)
+    - PayPal-iOS-SDK/Core (= 2.12.7)
+  - PayPal-iOS-SDK/CardIO (2.12.7):
+    - CardIO (~> 5.2.2)
+  - PayPal-iOS-SDK/Core (2.12.7)
+  - RMPickerViewController (1.3.3)
+  - SCLAlertView-Objective-C (0.7.9)
+  - Stripe (6.0.1):
+    - Stripe/Core (= 6.0.1)
+  - Stripe/Core (6.0.1)
+  - SZTextView (1.2.1)
+  - THCalendarDatePicker (1.2.5):
+    - KNSemiModalViewController_hons82 (~> 0.4.3)
+
+DEPENDENCIES:
+  - Branch
+  - Canvas
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - JLPermissions/Calendar
+  - JLPermissions/Location
+  - JLPermissions/Notification
+  - JLPermissions/Photos
+  - MBProgressHUD
+  - Onboard
+  - Parse
+  - ParseCrashReporting
+  - ParseFacebookUtilsV4
+  - ParseUI
+  - PAYFormBuilder
+  - PayMillSDK
+  - PayPal-iOS-SDK
+  - RMPickerViewController (~> 1.3.3)
+  - SCLAlertView-Objective-C
+  - Stripe
+  - THCalendarDatePicker (~> 1.2.4)
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
+  Branch: 71b1180c49d75e0d849e2611ecf3016de7572eac
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  CardIO: 2460db0f4936f3441b08d51e3904b436d77ec8fc
+  DBPrivacyHelper: c1e033776454dd3e16e8dcedf2e92d4d0a5e56df
+  FBSDKCoreKit: 66a935d17b6e00b6b64e604f2eb9b72c9ab7deb8
+  FBSDKLoginKit: d893fcbb98d854496925e9ff73c67b896982d3c4
+  FBSDKShareKit: e7577ee3adf80fc04fb656dd133fbb522250672b
+  JLPermissions: 3be1e747e85fb4e8642e99fd67fbefcc1e64b074
+  KNSemiModalViewController_hons82: 22aead5ef5d8ca749bc1babb43fa7d6f14b030a3
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  Onboard: 87648089e1b76d13b4f5bf8f7a1cdb144092f0af
+  Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
+  ParseCrashReporting: c5ea641e698d576f081f080dff06877ef831d30a
+  ParseFacebookUtilsV4: eab9b4ade12f0800b4d30f6b808bca55ce17a0e9
+  ParseUI: c2bcdfbb00330e464b5b773266ae221697a3bb7b
+  PAYFormBuilder: 6b6e2cb769adb4a0c3e1ef2e157962d92d17fd5e
+  PayMillSDK: 6cb18e836f907204b7e8507e0ec9e56ee149128f
+  PayPal-iOS-SDK: 401d441844bd6f0e08905dcdd7795f44c5ecef6c
+  RMPickerViewController: 1a64e211e86ac3d961214c9c376de7c0241ac25b
+  SCLAlertView-Objective-C: e36ab12dc1ec4ff6f932888083b21d71a3a1ad23
+  Stripe: 04f215191702c268b89fe0cdf28dc24a9688a71b
+  SZTextView: 906df45afd3c1b24fc5252088d5ef8061513c238
+  THCalendarDatePicker: 65c63c1814d1a27defc89f4b72ec7a1d01d5503d
+
+COCOAPODS: 0.39.0

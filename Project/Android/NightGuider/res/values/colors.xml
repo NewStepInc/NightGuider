@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tabMedium">#FFFFFF</color>
+    <color name="tabDark">#FFFFFF</color>
+    <color name="tabTransparent">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_graycolor">#EEEEEE</color>
+    <color name="black">#000000</color>
+    <color name="sky">#32b0e8</color>
+    <color name="tab_normal">#f4f6f7</color>
+    <color name="list_sel">#d9d9d9</color>
+    
+    <color name="titlebar_bg">#00BCD4</color>
+    <color name="titlebar_line">#4792ab</color>
+    
+   	<color name="text_tab_selected">#1f9ccc</color>
+	<color name="text_tab_unselected">#929292</color>
+	
+	<color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+</resources>

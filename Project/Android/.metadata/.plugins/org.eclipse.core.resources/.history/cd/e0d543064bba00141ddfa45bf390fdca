@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebeff2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/titlebar_bg" >
+
+        <TextView
+            android:id="@+id/textView_menutext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/titlebar_line" />
+
+        <ImageView
+            android:id="@+id/btn_infomation"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/btn_sender" />
+
+        <ImageButton
+            android:id="@+id/imgBtnSearchOnEvent"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/search_icon" />
+
+    </RelativeLayout>
+
+<!--      <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/list_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+	       
+	    android:numColumns="1"
+	    android:stretchMode="columnWidth"
+        android:gravity="fill"
+        ptr:ptrMode="both"
+ 
+    
+        android:listSelector="@drawable/list_selector" />
+-->
+
+    <LinearLayout
+        android:id="@+id/searchBarOnEvent"
+        android:layout_width="match_parent"
+        android:layout_height="32dp" >
+
+        <EditText
+            android:id="@+id/txtSearchKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:textSize="12sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnCancelSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+ 		<com.handmark.pulltorefresh.library.PullToRefreshGridView
+ 		    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+ 		    android:id="@+id/list_events"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="match_parent"
+ 		    android:divider="#b5b5b5"
+ 		    android:dividerHeight="1dp"
+ 		    android:gravity="fill"
+ 		    android:numColumns="1"
+ 		    android:stretchMode="columnWidth"
+ 		    android:verticalSpacing="1dp"
+ 		    ptr:ptrMode="both" />
+
+</LinearLayout>

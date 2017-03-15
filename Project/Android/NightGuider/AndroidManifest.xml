@@ -1,0 +1,203 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.werner.nightguider"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    
+     <!-- TODO: Replace "com.example.hellomap" with your package name -->
+    <permission
+            android:name="com.werner.nightguider.permission.MAPS_RECEIVE"
+            android:protectionLevel="signature"/>
+    <uses-permission android:name="com.werner.nightguider.permission.MAPS_RECEIVE"/>
+
+    <!-- The following four permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />  
+	<uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	
+    <!-- The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true"/>
+    
+    <application
+        android:name="ParseApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+         <!-- TODO: Insert your Maps API key here. See this page for more information:
+             https://developers.google.com/maps/documentation/android/start#the_google_maps_api_key -->
+        <!-- AIzaSyCp4xkJ2p-VfUqwaCoqEZ9nFdpaRx8yfCE -->
+        <!--  <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyBLCJqwx6XP0Y_zs_IwZY9b0ze1w-y7I7A"/>-->
+	<meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyCbnCCq2FHkOmGKzUGrocp-LW3yDddmQ1A"/>
+                 
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/title_activity_select_city"
+            android:screenOrientation="portrait" >
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="SelectCityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="FacebookLoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="TabsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="EventsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ClubsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="SearchResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="KarteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="FavoriteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--<activity-->
+            <!--android:name="EventsDetailsInfoActivity"-->
+            <!--android:screenOrientation="portrait" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+                <!--<data android:scheme="oauth" android:host="nightguider"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="EventsDetailsDetailActivity"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        
+        <activity
+            android:name="EventsDetailsActivity"
+            android:screenOrientation="portrait" >
+           
+        </activity>
+        
+        <activity
+            android:name="EventsLargeImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!--<activity-->
+            <!--android:name="ClubsDetailsInfoActivity"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="ClubsDetailsDetailActivity"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        
+        <activity
+            android:name="ClubsDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:name="SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".activitygroup.ActivityEventsStack"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".activitygroup.ActivityClubsStack"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".activitygroup.ActivitySearchStack"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".activitygroup.ActivityKarteStack"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".activitygroup.ActivityTopsStack"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!--<activity-->
+            <!--android:name=".util.FacebookLogin"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!-- -->
+        <!--<activity-->
+            <!--android:name=".sender.SendSMSActivity"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        
+        <activity
+            android:name="EventsOfClubActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+               
+        <service android:name="com.parse.PushService" />
+		<receiver android:name="com.parse.ParseBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.USER_PRESENT" />
+			</intent-filter>
+		</receiver>
+		<activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<meta-data android:value="@string/facebook_app_id" android:name="com.facebook.sdk.ApplicationId" />
+    </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0097A7"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="10dp" >
+    
+ <TextView
+     android:id="@+id/textView_groupdate"
+     android:layout_width="wrap_content"
+     android:layout_height="20dip"
+     android:gravity="center_vertical"
+     android:text="date"
+     android:textColor="#ffffff" />
+
+</LinearLayout>

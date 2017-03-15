@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tv_partys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Melde dich über Facebook an um viele nützliche Funktionen wie persönlich auf dich zugeschnittene Benachrichtigungen zu erhalten oder um an Events teilzunehmen."
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="260dp"
+        android:layout_height="66dp"
+        android:layout_alignLeft="@+id/tv_partys"
+        android:layout_alignRight="@+id/tv_partys"
+        android:layout_below="@+id/tv_partys"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_facebook_login" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:alpha="0.5"
+        android:gravity="center"
+        android:text="überspringen"
+        android:textColor="@color/white"
+        android:textSize="@dimen/lbl_copyright_textsize" />
+
+    <Button
+        android:id="@+id/btn_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.5"
+        android:background="@android:color/transparent"
+        android:text="Datenschutzerklärung"
+        android:textColor="@color/white"
+        android:textSize="@dimen/lbl_copyright_textsize" />
+
+</RelativeLayout>

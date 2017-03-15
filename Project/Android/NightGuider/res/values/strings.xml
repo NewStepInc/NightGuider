@@ -1,0 +1,18 @@
+<resources>
+	
+    <string name="app_name">NightGuider</string>
+    <string name="facebook_app_id">198963183581189</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_select_city">NightGuider</string>
+    <string name="selectcityheading">Clupp</string>
+    <string name="selectyourcity">Bitte wähle deine Stadt aus:</string>
+    <string name="loading">Loading...</string>
+	<string name="msg_post_success">Successfully posted on Facebook</string>
+    <string name="msg_facebook_link">https://play.google.com/store/apps/details?id=com.werner.nightguider</string>
+    
+    <string name="route_anzeigen">Route anzeigen</string>
+    <string name="details_anzeigen">Details anzeigen</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="change_city">Stadt auswählen?</string>
+</resources>

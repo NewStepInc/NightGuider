@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ebeff2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/titlebar_bg" >
+
+        <TextView
+            android:id="@+id/textView_menutext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/titlebar_line" />
+
+    </RelativeLayout>
+
+<!--    <ListView
+        android:id="@+id/list_clubs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+ --> 
+		<com.handmark.pulltorefresh.library.PullToRefreshGridView
+ 		    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+ 		    android:id="@+id/list_clubs"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="match_parent"
+ 		    android:divider="#b5b5b5"
+ 		    android:dividerHeight="2dp"
+ 		    android:gravity="fill"
+ 		    android:numColumns="1"
+ 		    android:stretchMode="columnWidth"
+ 		    android:verticalSpacing="2dp"
+ 		    ptr:ptrMode="both" />
+		
+</LinearLayout>

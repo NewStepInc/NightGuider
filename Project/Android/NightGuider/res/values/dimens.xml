@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_radius">8dp</dimen> 
+    <dimen name="tab_space_top">4dp</dimen>
+    <dimen name="tab_space">0dp</dimen>
+    <dimen name="tab_space_plus1">3dp</dimen>
+    <dimen name="tab_space_bottom_line">36sp</dimen>
+    <dimen name="tab_space_unselected_top">6sp</dimen> 
+    
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <!--  Select city page dimensions -->
+    <dimen name="lbl_city_title_top">50dp</dimen>
+    
+    <dimen name="lbl_please_top">80dp</dimen>
+    <dimen name="lbl_please_textsize">20sp</dimen>
+     <dimen name="lbl_loading_top">30dp</dimen>
+    <dimen name="lbl_loading_textsize">20sp</dimen>
+    <dimen name="list_top">30dp</dimen>
+    <dimen name="list_textsize">20sp</dimen>
+    
+    <!--  Info page dimensions -->
+    <dimen name="lbl_status_top">15dp</dimen>
+    <dimen name="lbl_status_textsize">16sp</dimen>
+    <dimen name="btn_getinfo_top">20dp</dimen>
+    <dimen name="btn_getinfo_width">100dp</dimen>
+    <dimen name="btn_getinfo_height">40dp</dimen>
+    <dimen name="btn_getinfo_textsize">20dp</dimen>
+    <dimen name="lbl_dein_top">15dp</dimen>
+    <dimen name="lbl_dein_textsize">20sp</dimen>
+    <dimen name="btn_fblogin_top">15dp</dimen>
+    <dimen name="btn_fblogin_left">15dp</dimen>
+    <dimen name="btn_fblogin_width">130dp</dimen>
+    <dimen name="btn_fblogin_height">50dp</dimen>
+    <dimen name="btn_fblogin_textsize">20sp</dimen>
+    <dimen name="btn_fblogout_right">15dp</dimen>
+   	<dimen name="lbl_version_bottom">5dp</dimen>
+    <dimen name="lbl_version_textsize">14sp</dimen>
+    <dimen name="lbl_copyright_bottom">10dp</dimen>
+    <dimen name="lbl_copyright_textsize">16sp</dimen>
+    <dimen name="btn_region_bottom">5dp</dimen>
+    <dimen name="btn_region_width">230dp</dimen>
+    <dimen name="btn_region_height">60dp</dimen>
+    <dimen name="btn_feedback_bottom">10dp</dimen>
+    <dimen name="btn_feedback_width">230dp</dimen>
+    <dimen name="btn_feedback_height">50dp</dimen>
+    <dimen name="btn_feedback_textsize">20sp</dimen>
+    
+    <!--  Clubs detail page dimensions -->
+    <dimen name="img_club_height">100dp</dimen>
+    
+    <!--  Events detail page dimensions -->
+    <dimen name="mapview_height">80dp</dimen>
+    <dimen name="tv_info_height">100dp</dimen>
+    
+    <dimen name="tabbar_height">55dp</dimen>
+</resources>  

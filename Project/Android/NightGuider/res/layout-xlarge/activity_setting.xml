@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/titlebar_bg" >
+
+        <TextView
+            android:id="@+id/textView_menutext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="NightGuider"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/titlebar_line" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="EINSTELLUNGEN"
+        android:textSize="@dimen/lbl_status_textsize" />
+
+    <Button
+        android:id="@+id/btn_region"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_region_height"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Stadt auswählen"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_feedback_textsize" />
+
+    <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_region_height"
+        android:background="@drawable/textview_border" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Facebook"
+            android:textColor="@color/black"
+            android:textSize="@dimen/btn_feedback_textsize" />
+
+        <TextView
+            android:id="@+id/tvFacebookUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/togglebtn_facebook"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/toggleswitch"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+ 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_fbinout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_fblogin_top" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_dein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="INFO"
+        android:textSize="@dimen/lbl_status_textsize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_region_height"
+        android:background="@drawable/textview_border" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Eventteilnahme posten"
+            android:textColor="@color/black"
+            android:textSize="@dimen/btn_feedback_textsize" />
+
+        <ToggleButton
+            android:id="@+id/togglebtn_post"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/toggleswitch"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_region_height"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Über uns"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_feedback_textsize" />
+
+    <Button
+        android:id="@+id/btn_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_region_height"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Feedback"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_feedback_textsize" />
+
+    <Button
+        android:id="@+id/btn_policy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Datenschutzerklärung"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

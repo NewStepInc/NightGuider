@@ -1,0 +1,69 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '7.1'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'NightGuider' do
+pod 'PAYFormBuilder'
+pod 'Canvas'
+pod 'SCLAlertView-Objective-C'
+pod 'Parse'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
+pod 'FBSDKShareKit'
+
+pod 'PayPal-iOS-SDK'
+pod 'Stripe'
+pod 'ParseUI'
+pod 'ParseFacebookUtilsV4'
+pod 'ParseCrashReporting'
+
+pod 'PayMillSDK'
+#pod 'CardIO'
+#pod 'Braintree'
+#pod 'PaymentKit'
+
+#datepicker screen
+pod 'RMPickerViewController', '~> 1.3.3'
+#pod 'RMDateSelectionViewController', '~> 1.4.3'
+pod 'THCalendarDatePicker', '~> 1.2.4'
+
+
+#pod 'SBPickerSelector'
+
+pod 'Branch'
+
+
+pod 'MBProgressHUD'
+#tutorial screen
+pod 'Onboard'
+#kann nicht bearbeitet werden
+#pod 'CRFAQTableViewController'
+
+
+pod 'JLPermissions/Calendar'
+#pod 'JLPermissions/Camera'
+#pod 'JLPermissions/Facebook'
+pod 'JLPermissions/Location'
+pod 'JLPermissions/Notification'
+pod 'JLPermissions/Photos'
+#pod 'JLPermissions/Reminders'
+#pod 'JLPermissions/Twitter'
+
+#erfordert ios8
+#pod "RFAboutView", '~> 1.0.1'
+
+#apache
+#pod 'BeaconManager'
+
+end
+
+
+target 'NightGuiderTests' do
+
+end
+
+target 'NightGuiderUITests' do
+
+end
+

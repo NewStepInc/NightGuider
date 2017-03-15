@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ebeff2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="33dp"
+        android:text="To Phone:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/phoneTextField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView1"
+        android:layout_alignRight="@+id/TextView1"
+        android:layout_below="@+id/TextView1"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phoneTextField"
+        android:layout_alignRight="@+id/phoneTextField"
+        android:layout_below="@+id/phoneTextField"
+        android:layout_marginTop="20dp"
+        android:text="Message"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/msgTextField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView2"
+        android:layout_alignRight="@+id/TextView2"
+        android:layout_below="@+id/TextView2"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:focusable="false"
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msgTextField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_detailbtn"
+        android:onClick="send"
+        android:text="Send"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
